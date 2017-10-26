@@ -3,9 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Primeiro JQuery</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+
+	<script type="text/javascript">
+		//Para usar a biblioteca de JQuery, é necessário utilizar um caractere especial para fazer a chamada ($) ou 
+		//Começando o script de JQuery ou seja quando o documento estiver carregado;
+
+		$(document).ready(function(){
+			$('#principal').append('<p>Texto Novo</p>');
+			$('#primeiro').click(function(){
+				$('div').append('<h2>Estou aqui !</h2>');
+			});
+		});
+	</script>
 </head>
 
 <body>
+	
+	<header>
+		<h1>Página com JQuery</h1>
+	</header>	
+	
+	<main>
+		
+		<section id="principal">
+			<div>
+				<button id="primeiro">primeiro</button><br>
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae harum totam odio, culpa consectetur aut iusto sint sapiente deserunt non fugit, tempore, praesentium atque cupiditate corrupti! Quos incidunt voluptatum animi.</div>
+			</div>
+			<div>
+				<div>Rerum eaque qui saepe ut consequuntur, doloribus ipsum, porro tenetur minus dolores reprehenderit? Ullam labore, natus, deleniti dolor asperiores quidem veniam nesciunt consequuntur voluptatibus nisi ducimus placeat molestias doloremque dignissimos.</div>
+			</div>
+		</section>
+
+
+	</main>
+
 	
 </body>
 </html>
